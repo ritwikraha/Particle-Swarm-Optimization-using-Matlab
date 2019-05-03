@@ -10,7 +10,8 @@ Proposed in 1995 by J. Kennedy an R.Eberhart, the article “Particle Swarm Opti
 - - - -
 ## Algorithm 
 
-`Initialize the controlling parameters (N,c1,c2,Wmin,Wmax,Vmax,MaxIter)
+```
+Initialize the controlling parameters (N,c1,c2,Wmin,Wmax,Vmax,MaxIter)
 Initialize the population of N particles
 do
 	for each particle
@@ -24,5 +25,6 @@ do
 		update position (x)
 	end for
 while the end condition is not satisfied
-return GBEST as the best estimation of global optimum`
+return GBEST as the best estimation of global optimum
+```
 
