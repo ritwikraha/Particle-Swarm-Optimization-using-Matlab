@@ -18,8 +18,12 @@ do
 	for each particle
 		calculate the objective of the particle
 		PP(i)=P(i)+(1-chi)Pg
+		adder=adder+P(i)
 		MBest(i)=(adder+P(i))/N
-		X(i)=PP(i)+beta*abs(MBest(i)-X(i))*log(1/u)
+		if rand <0.5
+			X(i)=PP(i)+beta*abs(MBest(i)-X(i))*log(1/u)
+		else
+			X(i)=PP(i)-beta*abs(MBest(i)-X(i))*log(1/u)
 		update PBEST- P(i) if required
 		update GBEST- Pg if required
 	end for
